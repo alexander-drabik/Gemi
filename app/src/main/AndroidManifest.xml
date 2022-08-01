@@ -3,7 +3,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         package="xyz.goatcode.gemi">
 
-    <application
+<application
             android:allowBackup="true"
             android:fullBackupContent="@xml/backup_rules"
             tools:targetApi="31"
@@ -12,6 +12,16 @@
             android:icon="@mipmap/ic_launcher"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/Theme.Gemi" />
+            android:theme="@style/Theme.Gemi">
+            <activity
+                    android:name=".MainActivity"
+                    android:exported="true">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+</application>
 
 </manifest>

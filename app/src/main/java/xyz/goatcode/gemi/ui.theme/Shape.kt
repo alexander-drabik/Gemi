@@ -1,4 +1,4 @@
-package xyz.goatcode.myapplication.ui.theme
+package xyz.goatcode.gemi.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
