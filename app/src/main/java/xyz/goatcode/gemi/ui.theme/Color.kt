@@ -13,3 +13,5 @@ val Colors.Panel: Color
     get() = if (isLight) Teal200 else darkPurple
 val Colors.Search: Color
     get() = if (isLight) Teal200 else Color(37, 32, 39, 255)
+val Colors.Cursor: Color
+    get() = if (isLight) Teal200 else Color(140, 62, 179, 255)

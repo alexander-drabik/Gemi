@@ -17,9 +17,11 @@ import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import xyz.goatcode.gemi.ui.theme.Cursor
 import xyz.goatcode.gemi.ui.theme.MyApplicationTheme
 import xyz.goatcode.gemi.ui.theme.Panel
 import xyz.goatcode.gemi.ui.theme.Search
@@ -65,7 +67,7 @@ class MainActivity : ComponentActivity() {
     @Composable
     private fun SearchBox() {
         var input by rememberSaveable {
-            mutableStateOf("tak")
+            mutableStateOf("")
         }
         Row(modifier = Modifier.fillMaxSize()) {
             Spacer(modifier = Modifier.width(12.dp))
@@ -86,12 +88,13 @@ class MainActivity : ComponentActivity() {
                 textStyle = TextStyle(
                     color = Color.White
                 ),
+                cursorBrush = SolidColor(MaterialTheme.colors.Cursor),
                 decorationBox = { innerTextField ->
                     Row(modifier = Modifier.fillMaxWidth()) {
                         if (input.isEmpty()) {
                             Text(
                                 text = "Search",
-                                color = Color.White,
+                                color = Color.Gray,
                                 fontSize = 14.sp
                             )
                         }
