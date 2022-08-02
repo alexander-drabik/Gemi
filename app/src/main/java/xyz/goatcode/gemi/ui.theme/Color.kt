@@ -11,3 +11,5 @@ val Teal200 = Color(0xFF03DAC5)
 
 val Colors.Panel: Color
     get() = if (isLight) Teal200 else darkPurple
+val Colors.Search: Color
+    get() = if (isLight) Teal200 else Color(37, 32, 39, 255)

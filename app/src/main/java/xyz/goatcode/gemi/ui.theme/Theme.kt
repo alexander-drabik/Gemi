@@ -10,7 +10,7 @@ import androidx.compose.ui.graphics.Color
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 private val DarkColorPalette = darkColors(
-    primary = Color(65, 64, 66, 255),
+    primary = Color(60, 59, 61, 255),
     primaryVariant = Purple700,
     secondary = Teal200,
     background = Color(38, 37, 43, 255)
